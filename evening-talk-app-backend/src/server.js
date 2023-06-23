@@ -1,4 +1,5 @@
 import express from "express";
+import { MongoClient } from "mongodb";
 
 let articlesInfo = [
   {
@@ -21,14 +22,18 @@ let articlesInfo = [
 const app = express();
 app.use(express.json());
 
-// app.post("/hello", (req, res) => {
-//   res.send(`Hello ${req.body.name}!`);
-// });
+app.get("/api/articles/:name", async (req, res) => {
+  const { name } = req.params;
 
-// app.get("/hello/:fname/:sname", (req, res) => {
-//   const { fname, sname } = req.params;
-//   res.send(`Hello ${fname} ${sname}!!`);
-// });
+  const client = new MongoClient("mongodb://127.0.0.1:27017");
+  await client.connect();
+
+  const db = client.db("react-blog-db");
+
+  const article = await db.collection("articles").findOne({ name });
+
+  res.json(article);
+});
 
 app.put("/api/articles/:name/upvote", (req, res) => {
   const { name } = req.params;
@@ -49,7 +54,7 @@ app.post("/api/articles/:name/comments", (req, res) => {
     article.comments.push({ postedBy, text });
     res.send(article.comments);
   } else {
-    res.send(`That article doesn\'t exist`);
+    res.send(`That article doesn\'t exist!`);
   }
 });
 
