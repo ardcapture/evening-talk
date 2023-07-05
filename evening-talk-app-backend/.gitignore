@@ -13,3 +13,6 @@
 
 # Firebase
 credentials.json
+
+.env
+prod-env.yaml
