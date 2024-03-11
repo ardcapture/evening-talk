@@ -1,10 +1,11 @@
 import Three from "../components/Three";
+import ThreeMaterial from "../components/ThreeMaterial";
 
 const HomePage = () => {
   return (
     <>
       <h1>Evening Talk App</h1>
-      <Three></Three>
+      <ThreeMaterial></ThreeMaterial>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
          architecto ab perferendis nesciunt, aliquam assumenda dolores nostrum, 
          ad accusantium placeat magnam nobis voluptatem hic omnis repellat ex? 
