@@ -6,7 +6,7 @@ import noise from 'noisejs';
 import * as TWEEN from 'tween.js';
 
 
-const Three = () => {
+const ThreeModel = () => {
     const sceneRef = useRef(null);
 
     const getBox = (w, h, d) => {
@@ -267,4 +267,4 @@ const Three = () => {
 }
 
 
-export default Three;
+export default ThreeModel;

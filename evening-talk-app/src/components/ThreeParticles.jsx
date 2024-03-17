@@ -96,6 +96,7 @@ const ThreeParticles = () => {
 
 	    // renderer
         const renderer = new THREE.WebGLRenderer();
+        renderer.setPixelRatio(window.devicePixelRatio)
         renderer.setSize(window.innerWidth, window.innerHeight);
         renderer.shadowMap.enabled = true;
         sceneRef.current.appendChild(renderer.domElement);

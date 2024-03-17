@@ -1,12 +1,13 @@
-import Three from "../components/Three";
-import ThreeMaterial from "../components/ThreeMaterial";
-import ThreeParticles from "../components/ThreeParticles";
+
+import ThreeFibre from "../components/ThreeFibre";
+import ThreeDemo from "../components/ThreeDemo";
+
 
 const HomePage = () => {
   return (
     <>
       <h1>Evening Talk App</h1>
-      <ThreeParticles></ThreeParticles>
+      <ThreeFibre/>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
          architecto ab perferendis nesciunt, aliquam assumenda dolores nostrum, 
          ad accusantium placeat magnam nobis voluptatem hic omnis repellat ex? 

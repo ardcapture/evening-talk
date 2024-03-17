@@ -70,8 +70,8 @@ const update = (renderer, scene, camera, controls, clock) => {
         if (index % 3 === 2) {
             positionAttribute.array[index] = Math.sin(elapsedTime + index * 0.1);
         }
-
     });
+    
     positionAttribute.needsUpdate = true;
 
     renderer.render(scene, camera);
