@@ -14,7 +14,7 @@ const firebaseConfig = {
 };
 const app = initializeApp(firebaseConfig);
 
-const root = ReactDOM.createRoot(document.getElementById("root")!); // not sure what the ! is needed for with Typescript
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
