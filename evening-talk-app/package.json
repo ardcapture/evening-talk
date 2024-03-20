@@ -12,6 +12,7 @@
     "@types/node": "^20.4.2",
     "@types/three": "^0.162.0",
     "axios": "^1.4.0",
+    "browserslist": "^4.23.0",
     "dat.gui": "^0.7.9",
     "firebase": "^9.22.2",
     "noisejs": "^2.1.0",
