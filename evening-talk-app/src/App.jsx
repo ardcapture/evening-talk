@@ -1,10 +1,11 @@
 import "./App.css";
-import Articles from "./pages/ArticlesListPage";
-import ArticlePage from "./pages/ArticlePage";
-import CreateAccountPage from "./pages/CreateAccountPage";
-import HomePage from "./pages/HomePage";
-import LoginPage from "./pages/LoginPage";
-import NavBar from "./components/NavBar";
+import Articles from "./pages/ArticlesListPage.jsx";
+import ArticlePage from "./pages/ArticlePage.jsx";
+import CreateAccountPage from "./pages/CreateAccountPage.jsx";
+import HomePage from "./pages/HomePage.jsx";
+import LoginPage from "./pages/LoginPage.jsx";
+import NavBar from "./components/NavBar.jsx";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NotFoundPage from "./pages/NotFoundPage";
 
