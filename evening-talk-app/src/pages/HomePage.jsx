@@ -1,6 +1,5 @@
 
 import ThreeFibre from "../components/ThreeFibre";
-import ThreeDemo from "../components/ThreeDemo";
 
 
 const HomePage = () => {
